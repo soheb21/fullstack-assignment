@@ -1,0 +1,45 @@
+.navbar {
+  background-color: black;
+  color: white;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  z-index: 99;
+}
+.nav-left {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.nav-left > span {
+  font-weight: 700;
+}
+.nav-right > button {
+  outline: 1px solid white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(37, 33, 33, 0.463);
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+}
+.nav-right > button:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    height: 90px;
+  }
+  .nav-right > button {
+    font-size: 12px;
+  }
+}

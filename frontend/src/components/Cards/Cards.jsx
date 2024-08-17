@@ -1,20 +1,47 @@
-import React, { useEffect } from 'react';
-import useData from '../../hook/Custojm';
 
+import "./Cards.css"
 const Cards = () => {
-    const { data, loading, error, fetchData } = useData();
 
-    // useEffect(() => {
-    //     fetchData();
-    // }, [fetchData]);
-
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error: {error}</p>;
 
     return (
-        <ul>
-            fata
-        </ul>
+        <div className="main">
+            <div className="main-container">
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+                <div className="card">
+                    <h2>Branches</h2>
+                    <p>Abstract Branches let you manage, version and document your designs in one place</p>
+                </div>
+
+            </div>
+
+        </div>
     );
 };
 

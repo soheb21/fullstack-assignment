@@ -1,0 +1,40 @@
+.add-container {
+  margin-top: 50px;
+  height: 50%;
+  padding: 4rem;
+}
+.add-container > p {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  width: fit-content;
+}
+.add-container > form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.add-container > form > input {
+  font-size: 1.4rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.add-container > form > button {
+  outline: 1px solid white;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  background-color: rgba(37, 33, 33, 0.463);
+  font-size: 1.2rem;
+  color: white;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: all ease-in-out 300ms;
+  width: fit-content;
+}
+.add-container > form > button:hover {
+  transform: scale(1.1);
+}
