@@ -4,7 +4,7 @@
 
 ### 1. Clone the Repository
 
-```bash
+```bash or VS Code
 git clone https://github.com/yourusername/yourprojectname.git
 cd yourprojectname
 
