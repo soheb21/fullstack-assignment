@@ -1,30 +1,46 @@
 # Help Center API Assignment
 
-## Instructions
+## Instructions How to run on localhost
 
-1. **Clone the Repository:**
+### 1. Clone the Repository
 
-   ```bash
-   git clone https://github.com/iAmritMalviya/fullstack-assignment
-   cd fullstack-assignment
-   ```
+```bash
+git clone https://github.com/yourusername/yourprojectname.git
+cd yourprojectname
 
-2. **Frontend:**
+## Getting Started
 
-   - Create a React app in the `frontend` folder.
-   - Follow the instructions in `frontend.md` to complete the frontend.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/yourusername/yourprojectname.git
+cd yourprojectname
 
-3. **Backend:**
+###2. Install Dependencies
+Backend (Node.js/Express):
+cd backend
+npm install
 
-   - Create a Node.js app in the `backend` folder.
-   - Follow the `backend.md` instructions to complete the backend.
+Frontend (React):
+cd ../frontend
+npm install
 
-4. **Push Your Work:**
+###3. Set Up Environment Variables
+Create a .env file in the backend directory.
+Add the following variables (modify the values accordingly):
+example:
+MONGO_URI=your_mongodb_connection_string
+PORT=8000
 
-   - Push both the frontend and backend apps to the same repository.
-   - Make sure the repository is public.
+###4. Run the Application
+Backend (Node.js/Express):
 
-5. **Submit Your Work:**
-   - Paste the GitHub repository link in the Google form you received after pushing your code.
+cd backend
+npm run dev
+Frontend (React):
+In a new terminal window:
+cd frontend
+npm start
 
----
+###5. Access the Website
+Open your browser and go to:
+http://localhost:5173
