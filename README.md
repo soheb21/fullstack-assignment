@@ -12,7 +12,7 @@ cd yourprojectname
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/yourprojectname.git
+git clone https://github.com/yourusername/yourprojectname.git](https://github.com/soheb21/fullstack-assignment/tree/main
 cd yourprojectname
 
 ###2. Install Dependencies
