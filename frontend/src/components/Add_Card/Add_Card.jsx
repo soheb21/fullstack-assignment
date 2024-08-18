@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import Layout from '../Layout/Layout';
 import "./Add_Card.css"
+import { useDispatch } from 'react-redux';
+import { addNewCardAsync } from '../../store/card/cardAPI';
 
 const Add_Card = () => {
     const [newData, setNewData] = useState({ title: '', description: '' });
+    const dispatch = useDispatch();
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(newData)
+        dispatch(addNewCardAsync(newData))
         setNewData({ title: '', description: '' });
     };
 

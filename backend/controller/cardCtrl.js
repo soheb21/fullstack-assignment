@@ -6,7 +6,15 @@ const Card = require('../model/card');
 // @route  GET /api/v1/card
 const getcards = async (req, res) => {
     try {
-        const cards = await Card.find();
+        const { query } = req.query;
+        let cards = [];
+        if (!query) {
+            cards = await Card.find();
+        }
+        cards = await Card.find({
+            title: { $regex: query, $options: "i" }
+        });
+
         res.json(cards);
     } catch (err) {
         res.status(500).json({ message: err.message });

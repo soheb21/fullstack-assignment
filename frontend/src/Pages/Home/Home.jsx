@@ -4,11 +4,11 @@ import Layout from '../../components/Layout/Layout'
 import Cards from '../../components/Cards/Cards'
 import Header from '../../components/Header/Header'
 
-const Home = () => {
+const Home = ({ setQuery }) => {
     return (
         <Layout>
             {/* header */}
-            <Header />
+            <Header setQuery={setQuery} />
             {/* main */}
             <Cards />
         </Layout>

@@ -1,14 +1,14 @@
-import React from 'react'
 import "./Header.css"
 
-const Header = () => {
+const Header = ({ setQuery }) => {
+
     return (
         <div className="nav-container">
-         
+
             <div className="header-main">
                 <h1>How Can We Help?</h1>
                 <div className="search-bar">
-                    <input type="text" placeholder='Search' />
+                    <input onChange={(e) => setQuery(e.target.value)} type="text" placeholder='Search' />
                 </div>
             </div>
         </div>
